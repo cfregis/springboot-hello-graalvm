@@ -1,5 +1,5 @@
 # Build Stage
-FROM ghcr.io/graalvm/graalvm-community:21.0.2-ol9-20240116 AS builder
+FROM ghcr.io/graalvm/graalvm-community:21 AS builder
 WORKDIR /app
 COPY . .
 RUN ./mvnw native:compile -Pnative
